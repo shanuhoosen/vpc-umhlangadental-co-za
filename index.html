@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="robots" content="noindex, nofollow">
+  <meta name="description" content="Umhlanga Dental — Dr David Sykes. Modern laser dentistry with Waterlase technology. First in KZN. Book your appointment today.">
+  <title>Umhlanga Dental — Dr David Sykes | Laser Dentistry KZN</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <link rel="icon" type="image/png" sizes="64x64" href="https://www.google.com/s2/favicons?domain=umhlangadental.co.za&sz=64">
+  <link rel="apple-touch-icon" href="https://umhlangadental.co.za/images/logo.png">
+  <script>tailwind.config={theme:{extend:{fontFamily:{sans:['Inter','sans-serif'],serif:['Playfair Display','serif']},colors:{primary:{DEFAULT:'#5DBCD9',50:'#eef8fb',100:'#d5eff5',200:'#b0e1ed',300:'#73bcd9',400:'#5DBCD9',500:'#3a9fc2',600:'#2d7fa0',700:'#236680',800:'#1a4d60'},accent:'#5D82D1',dark:'#0f1c2e'}}}}</script>
+  <style>
+    body{font-family:'Inter',sans-serif}
+    h1,h2,h3,.font-serif{font-family:'Playfair Display',serif}
+    @keyframes udFadeUp{from{opacity:0;transform:translateY(40px)}to{opacity:1;transform:translateY(0)}}
+    @keyframes udFloat{0%,100%{transform:translateY(0)}50%{transform:translateY(-8px)}}
+    @keyframes udScrollDot{0%,100%{transform:translateY(0)}50%{transform:translateY(8px)}}
+    @keyframes udPulse{0%,100%{opacity:1}50%{opacity:.5}}
+    .ud-fade-up{animation:udFadeUp .9s cubic-bezier(.22,1,.36,1) both}
+    .ud-d1{animation-delay:.1s}.ud-d2{animation-delay:.25s}.ud-d3{animation-delay:.4s}
+    .ud-d4{animation-delay:.55s}.ud-d5{animation-delay:.7s}
+    .hero-bg{background-image:url('https://images.unsplash.com/photo-1629909613654-28e377c37b09?w=1600&h=900&fit=crop&q=80');background-size:cover;background-position:center 30%;background-attachment:fixed}
+    @media(max-width:768px){.hero-bg{background-attachment:scroll}}
+    .hero-overlay{background:linear-gradient(135deg,rgba(13,28,46,.92) 0%,rgba(45,127,160,.82) 50%,rgba(93,130,209,.75) 100%)}
+    .hero-fade{position:absolute;bottom:0;left:0;right:0;height:140px;background:linear-gradient(to bottom,transparent,#ffffff)}
+    .glass{background:rgba(255,255,255,.07);border:1px solid rgba(255,255,255,.15);backdrop-filter:blur(12px);-webkit-backdrop-filter:blur(12px)}
+    .nav-scrolled{background:rgba(255,255,255,.97)!important;backdrop-filter:blur(12px);box-shadow:0 2px 20px rgba(0,0,0,.08)}
+    .btn-primary{background:#5DBCD9;color:#fff;box-shadow:0 4px 20px rgba(93,188,217,.4);transition:all .3s ease}
+    .btn-primary:hover{background:#3a9fc2;transform:translateY(-2px);box-shadow:0 8px 32px rgba(93,188,217,.55)}
+    .btn-outline{border:2px solid rgba(255,255,255,.6);color:#fff;backdrop-filter:blur(6px);transition:all .3s ease}
+    .btn-outline:hover{background:rgba(255,255,255,.12);border-color:#fff;transform:translateY(-2px)}
+    .btn-dark{background:#0f1c2e;color:#fff;transition:all .3s ease}
+    .btn-dark:hover{background:#1a2d45;transform:translateY(-2px);box-shadow:0 8px 24px rgba(15,28,46,.3)}
+    .service-card{border:1px solid rgba(93,188,217,.1);box-shadow:0 4px 24px rgba(93,188,217,.06),0 1px 4px rgba(0,0,0,.04);transition:transform .35s cubic-bezier(.22,1,.36,1),box-shadow .35s ease}
+    .service-card:hover{transform:translateY(-8px);box-shadow:0 20px 48px rgba(93,188,217,.16),0 4px 12px rgba(0,0,0,.06)}
+    .service-icon{background:linear-gradient(135deg,#eef8fb,#d5eff5);transition:all .3s ease}
+    .service-card:hover .service-icon{background:linear-gradient(135deg,#5DBCD9,#3a9fc2);transform:scale(1.08) rotate(-3deg)}
+    .service-card:hover .service-icon i{color:#fff}
+    .testimonial-card{border:1px solid rgba(93,188,217,.1);transition:transform .3s ease,box-shadow .3s ease}
+    .testimonial-card:hover{transform:translateY(-4px);box-shadow:0 12px 32px rgba(93,188,217,.12)}
+    .section-badge{display:inline-flex;align-items:center;gap:.4rem;background:linear-gradient(135deg,#eef8fb,#d5eff5);color:#3a9fc2;font-size:.78rem;font-weight:700;letter-spacing:.12em;text-transform:uppercase;padding:.4rem 1rem;border-radius:50px;border:1px solid rgba(93,188,217,.2)}
+    .accent-divider{width:48px;height:3px;background:linear-gradient(90deg,#5DBCD9,#5D82D1);border-radius:4px;margin-top:.75rem}
+    .faq-btn{transition:background .2s ease}.faq-btn:hover{background:rgba(93,188,217,.06)}
+    .faq-answer{max-height:0;overflow:hidden;transition:max-height .4s ease,padding .3s ease}
+    .faq-open .faq-answer{max-height:300px;padding-top:.75rem;padding-bottom:.25rem}
+    .faq-open .faq-chevron{transform:rotate(180deg)}.faq-chevron{transition:transform .3s ease}
+    .form-input{transition:border-color .2s ease,box-shadow .2s ease}
+    .form-input:focus{border-color:#5DBCD9;box-shadow:0 0 0 3px rgba(93,188,217,.15);outline:none}
+    .scroll-dot{animation:udScrollDot 2.2s ease-in-out infinite}
+    .pulse-dot{animation:udPulse 2s cubic-bezier(.4,0,.6,1) infinite}
+    .process-line{position:absolute;top:24px;left:24px;right:-50%;height:2px;background:linear-gradient(90deg,#5DBCD9,#d5eff5)}
+    .mobile-menu{max-height:0;overflow:hidden;transition:max-height .4s ease}.mobile-menu.open{max-height:400px}
+    .scroll-top{opacity:0;pointer-events:none;transition:opacity .3s ease}.scroll-top.visible{opacity:1;pointer-events:auto}
+  </style>
+</head>
+<body class="bg-white text-gray-800">
+
+<!-- NAV -->
+<nav id="main-nav" class="fixed top-0 left-0 right-0 z-50 bg-transparent transition-all duration-300">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="flex items-center justify-between h-20">
+      <a href="#" class="flex items-center gap-3">
+        <img src="https://umhlangadental.co.za/images/logo.png" alt="Umhlanga Dental" class="h-10">
+        <span class="text-lg font-bold text-white nav-title transition-colors duration-300">Umhlanga Dental</span>
+      </a>
+      <div class="hidden md:flex items-center gap-8">
+        <a href="#services" class="text-sm font-medium text-white/80 hover:text-white nav-link transition-colors">Services</a>
+        <a href="#about" class="text-sm font-medium text-white/80 hover:text-white nav-link transition-colors">About</a>
+        <a href="#process" class="text-sm font-medium text-white/80 hover:text-white nav-link transition-colors">How It Works</a>
+        <a href="#testimonials" class="text-sm font-medium text-white/80 hover:text-white nav-link transition-colors">Reviews</a>
+        <a href="#faq" class="text-sm font-medium text-white/80 hover:text-white nav-link transition-colors">FAQ</a>
+        <a href="#contact" class="text-sm font-medium text-white/80 hover:text-white nav-link transition-colors">Contact</a>
+        <a href="#booking" class="btn-primary px-5 py-2.5 rounded-xl text-sm font-semibold">Book Now</a>
+      </div>
+      <button id="mobile-toggle" class="md:hidden text-white nav-link p-2"><svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/></svg></button>
+    </div>
+  </div>
+  <div id="mobile-menu" class="mobile-menu md:hidden bg-white border-t shadow-lg">
+    <div class="px-4 py-4 space-y-3">
+      <a href="#services" class="block text-sm font-medium text-gray-700 py-2">Services</a>
+      <a href="#about" class="block text-sm font-medium text-gray-700 py-2">About</a>
+      <a href="#process" class="block text-sm font-medium text-gray-700 py-2">How It Works</a>
+      <a href="#testimonials" class="block text-sm font-medium text-gray-700 py-2">Reviews</a>
+      <a href="#faq" class="block text-sm font-medium text-gray-700 py-2">FAQ</a>
+      <a href="#contact" class="block text-sm font-medium text-gray-700 py-2">Contact</a>
+      <a href="#booking" class="block btn-primary text-center px-5 py-3 rounded-xl text-sm font-semibold mt-2">Book Now</a>
+    </div>
+  </div>
+</nav>
+
+<!-- HERO -->
+<section id="hero" class="relative min-h-screen flex items-center overflow-hidden">
+  <div class="hero-bg absolute inset-0"></div>
+  <div class="hero-overlay absolute inset-0"></div>
+  <div class="hero-fade z-10"></div>
+  <div class="relative z-20 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-32 w-full">
+    <div class="glass rounded-full px-4 py-2 inline-flex items-center gap-2 mb-8 ud-fade-up ud-d1">
+      <span class="w-2 h-2 rounded-full bg-emerald-400 pulse-dot"></span>
+      <span class="text-white/90 text-sm font-medium">Umhlanga, KZN &middot; Dr David Sykes</span>
+    </div>
+    <h1 class="text-4xl sm:text-5xl lg:text-6xl font-bold text-white leading-[1.08] tracking-tight mb-6 ud-fade-up ud-d2">
+      Advanced Laser Dentistry<br>Your Family Can <span style="color:#73bcd9">Trust.</span>
+    </h1>
+    <p class="text-lg sm:text-xl text-white/75 max-w-2xl mb-10 ud-fade-up ud-d3 leading-relaxed" style="font-family:'Inter',sans-serif">
+      First Waterlase-equipped practice in KZN. No drills, no needles — just gentle, effective dental care with state-of-the-art laser technology.
+    </p>
+    <div class="flex flex-wrap gap-4 mb-16 ud-fade-up ud-d4">
+      <a href="#booking" class="btn-primary px-8 py-4 rounded-xl font-semibold text-base"><i class="fas fa-calendar-check mr-2"></i>Request Appointment</a>
+      <a href="tel:+27315615520" class="btn-outline px-8 py-4 rounded-xl font-semibold text-base"><i class="fas fa-phone mr-2"></i>031 561 5520</a>
+    </div>
+    <div class="flex flex-wrap gap-3 ud-fade-up ud-d5">
+      <div class="glass rounded-xl px-4 py-3 flex items-center gap-2 hover:bg-white/10 transition-all cursor-default"><i class="fas fa-award" style="color:#73bcd9"></i><span class="text-white/90 text-sm font-medium">Waterlase Certified</span></div>
+      <div class="glass rounded-xl px-4 py-3 flex items-center gap-2 hover:bg-white/10 transition-all cursor-default"><i class="fas fa-child" style="color:#73bcd9"></i><span class="text-white/90 text-sm font-medium">Kid-Friendly</span></div>
+      <div class="glass rounded-xl px-4 py-3 flex items-center gap-2 hover:bg-white/10 transition-all cursor-default"><i class="fas fa-bolt" style="color:#73bcd9"></i><span class="text-white/90 text-sm font-medium">Emergency Care</span></div>
+      <div class="glass rounded-xl px-4 py-3 flex items-center gap-2 hover:bg-white/10 transition-all cursor-default"><i class="fab fa-whatsapp text-emerald-400"></i><span class="text-white/90 text-sm font-medium">WhatsApp Booking</span></div>
+    </div>
+    <div class="absolute bottom-10 left-1/2 -translate-x-1/2 flex flex-col items-center gap-2">
+      <span class="text-white/40 text-xs tracking-widest uppercase">Scroll</span>
+      <div class="w-5 h-8 border-2 border-white/30 rounded-full flex justify-center pt-1.5"><div class="w-1 h-2 bg-white/60 rounded-full scroll-dot"></div></div>
+    </div>
+  </div>
+</section>
+
+<!-- SERVICES -->
+<section id="services" class="py-24 bg-white">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="text-center mb-16">
+      <div class="section-badge mx-auto mb-4"><i class="fas fa-tooth text-xs"></i> Our Services</div>
+      <h2 class="text-3xl sm:text-4xl font-bold text-gray-900 mt-4">Comprehensive Dental Care</h2>
+      <div class="accent-divider mx-auto"></div>
+      <p class="text-gray-500 mt-4 max-w-2xl mx-auto" style="font-family:'Inter',sans-serif">From routine check-ups to advanced laser procedures, we provide a full range of dental treatments tailored to your needs.</p>
+    </div>
+    <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-8">
+      <div class="service-card bg-white rounded-2xl p-8">
+        <div class="service-icon w-14 h-14 rounded-2xl flex items-center justify-center mb-5"><i class="fas fa-bolt text-xl" style="color:#3a9fc2"></i></div>
+        <h3 class="text-lg font-bold text-gray-900 mb-2" style="font-family:'Inter',sans-serif">Waterlase Laser Dentistry</h3>
+        <p class="text-sm text-gray-500 leading-relaxed">Revolutionary laser technology — no drills, no needles. Safe, gentle, and highly effective for most dental procedures.</p>
+      </div>
+      <div class="service-card bg-white rounded-2xl p-8">
+        <div class="service-icon w-14 h-14 rounded-2xl flex items-center justify-center mb-5"><i class="fas fa-teeth text-xl" style="color:#3a9fc2"></i></div>
+        <h3 class="text-lg font-bold text-gray-900 mb-2" style="font-family:'Inter',sans-serif">Restorative Care</h3>
+        <p class="text-sm text-gray-500 leading-relaxed">Crowns, bridges, fillings, and implants to restore your teeth to full function and a beautiful, natural appearance.</p>
+      </div>
+      <div class="service-card bg-white rounded-2xl p-8">
+        <div class="service-icon w-14 h-14 rounded-2xl flex items-center justify-center mb-5"><i class="fas fa-child text-xl" style="color:#3a9fc2"></i></div>
+        <h3 class="text-lg font-bold text-gray-900 mb-2" style="font-family:'Inter',sans-serif">Children's Dentistry</h3>
+        <p class="text-sm text-gray-500 leading-relaxed">Gentle, fun-filled dental visits that build positive associations. Kids who start here never learn to fear the dentist.</p>
+      </div>
+      <div class="service-card bg-white rounded-2xl p-8">
+        <div class="service-icon w-14 h-14 rounded-2xl flex items-center justify-center mb-5"><i class="fas fa-first-aid text-xl" style="color:#3a9fc2"></i></div>
+        <h3 class="text-lg font-bold text-gray-900 mb-2" style="font-family:'Inter',sans-serif">Emergency Care</h3>
+        <p class="text-sm text-gray-500 leading-relaxed">Same-day emergency appointments available. Call or WhatsApp us immediately for urgent dental issues.</p>
+      </div>
+      <div class="service-card bg-white rounded-2xl p-8">
+        <div class="service-icon w-14 h-14 rounded-2xl flex items-center justify-center mb-5"><i class="fas fa-sparkles text-xl" style="color:#3a9fc2"></i></div>
+        <h3 class="text-lg font-bold text-gray-900 mb-2" style="font-family:'Inter',sans-serif">Dental Hygiene</h3>
+        <p class="text-sm text-gray-500 leading-relaxed">Professional cleaning, scaling, and polishing by our dedicated dental hygienist. Prevent problems before they start.</p>
+      </div>
+      <div class="service-card bg-white rounded-2xl p-8">
+        <div class="service-icon w-14 h-14 rounded-2xl flex items-center justify-center mb-5"><i class="fas fa-smile-beam text-xl" style="color:#3a9fc2"></i></div>
+        <h3 class="text-lg font-bold text-gray-900 mb-2" style="font-family:'Inter',sans-serif">Cosmetic Dentistry</h3>
+        <p class="text-sm text-gray-500 leading-relaxed">Teeth whitening, veneers, and smile makeovers. Achieve the confident, radiant smile you've always wanted.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ABOUT -->
+<section id="about" class="py-24 bg-gradient-to-b from-gray-50 to-white">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="grid lg:grid-cols-2 gap-16 items-center">
+      <div>
+        <div class="section-badge mb-4"><i class="fas fa-user-md text-xs"></i> About Us</div>
+        <h2 class="text-3xl sm:text-4xl font-bold text-gray-900 mt-4">Your Favourite Dentist<br>in Umhlanga</h2>
+        <div class="accent-divider"></div>
+        <p class="text-gray-600 mt-6 leading-relaxed" style="font-family:'Inter',sans-serif">Umhlanga Dental is a modern practice equipped to the highest standards, providing a full range of state-of-the-art dental treatments. Led by Dr David Sykes, our team is committed to comprehensive, gentle dental care in a relaxed environment.</p>
+        <p class="text-gray-600 mt-4 leading-relaxed" style="font-family:'Inter',sans-serif">Whether you're looking for a more attractive smile, healthier teeth and gums, or need emergency treatment — we have you covered with excellent, caring, friendly and fully trained staff.</p>
+        <div class="grid grid-cols-2 gap-4 mt-8">
+          <div class="flex items-center gap-3 p-3 rounded-xl bg-white shadow-sm border border-gray-100"><div class="w-10 h-10 rounded-lg flex items-center justify-center" style="background:#eef8fb"><i class="fas fa-check-circle" style="color:#5DBCD9"></i></div><span class="text-sm font-medium text-gray-700">Laser Technology</span></div>
+          <div class="flex items-center gap-3 p-3 rounded-xl bg-white shadow-sm border border-gray-100"><div class="w-10 h-10 rounded-lg flex items-center justify-center" style="background:#eef8fb"><i class="fas fa-check-circle" style="color:#5DBCD9"></i></div><span class="text-sm font-medium text-gray-700">Family Practice</span></div>
+          <div class="flex items-center gap-3 p-3 rounded-xl bg-white shadow-sm border border-gray-100"><div class="w-10 h-10 rounded-lg flex items-center justify-center" style="background:#eef8fb"><i class="fas fa-check-circle" style="color:#5DBCD9"></i></div><span class="text-sm font-medium text-gray-700">Conservative Care</span></div>
+          <div class="flex items-center gap-3 p-3 rounded-xl bg-white shadow-sm border border-gray-100"><div class="w-10 h-10 rounded-lg flex items-center justify-center" style="background:#eef8fb"><i class="fas fa-check-circle" style="color:#5DBCD9"></i></div><span class="text-sm font-medium text-gray-700">Emergency Ready</span></div>
+        </div>
+      </div>
+      <div class="relative">
+        <div class="rounded-3xl p-10 text-center" style="background:linear-gradient(135deg,#d5eff5,#eef8fb)">
+          <img src="https://umhlangadental.co.za/images/logo.png" alt="Umhlanga Dental" class="h-24 mx-auto mb-6">
+          <h3 class="text-2xl font-bold text-gray-900 mb-2" style="font-family:'Inter',sans-serif">Dr David Sykes</h3>
+          <p class="font-medium mb-4" style="color:#3a9fc2">Lead Dentist</p>
+          <p class="text-gray-500 text-sm leading-relaxed">Waterlase-certified specialist with extensive experience in laser dentistry, restorative care, and cosmetic procedures.</p>
+          <div class="mt-6 flex justify-center gap-3">
+            <a href="tel:+27315615520" class="btn-primary px-5 py-2.5 rounded-xl text-sm font-semibold inline-flex items-center gap-2"><i class="fas fa-phone"></i> Call Now</a>
+            <a href="https://wa.me/27846513580" target="_blank" class="bg-emerald-500 text-white px-5 py-2.5 rounded-xl text-sm font-semibold inline-flex items-center gap-2 hover:bg-emerald-600 transition shadow-lg shadow-emerald-500/30"><i class="fab fa-whatsapp"></i> WhatsApp</a>
+          </div>
+        </div>
+        <div class="absolute -top-4 -right-4 w-24 h-24 rounded-full blur-2xl" style="background:rgba(93,188,217,.2)"></div>
+        <div class="absolute -bottom-4 -left-4 w-32 h-32 rounded-full blur-2xl" style="background:rgba(93,130,209,.15)"></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- PROCESS -->
+<section id="process" class="py-24 bg-white">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="text-center mb-16">
+      <div class="section-badge mx-auto mb-4"><i class="fas fa-route text-xs"></i> How It Works</div>
+      <h2 class="text-3xl sm:text-4xl font-bold text-gray-900 mt-4">Your Journey to a Better Smile</h2>
+      <div class="accent-divider mx-auto"></div>
+    </div>
+    <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-8">
+      <div class="text-center relative">
+        <div class="w-12 h-12 rounded-full text-white flex items-center justify-center text-lg font-bold mx-auto mb-4" style="background:#5DBCD9">1</div>
+        <div class="hidden lg:block process-line"></div>
+        <h3 class="text-lg font-bold text-gray-900 mb-2" style="font-family:'Inter',sans-serif">Book</h3>
+        <p class="text-sm text-gray-500">Call, WhatsApp, or use our online form to schedule your appointment.</p>
+      </div>
+      <div class="text-center relative">
+        <div class="w-12 h-12 rounded-full text-white flex items-center justify-center text-lg font-bold mx-auto mb-4" style="background:#5DBCD9">2</div>
+        <div class="hidden lg:block process-line"></div>
+        <h3 class="text-lg font-bold text-gray-900 mb-2" style="font-family:'Inter',sans-serif">Examine</h3>
+        <p class="text-sm text-gray-500">Thorough examination with digital imaging to understand your dental health.</p>
+      </div>
+      <div class="text-center relative">
+        <div class="w-12 h-12 rounded-full text-white flex items-center justify-center text-lg font-bold mx-auto mb-4" style="background:#5DBCD9">3</div>
+        <div class="hidden lg:block process-line"></div>
+        <h3 class="text-lg font-bold text-gray-900 mb-2" style="font-family:'Inter',sans-serif">Treat</h3>
+        <p class="text-sm text-gray-500">Gentle, conservative treatment using the latest Waterlase laser technology.</p>
+      </div>
+      <div class="text-center">
+        <div class="w-12 h-12 rounded-full text-white flex items-center justify-center text-lg font-bold mx-auto mb-4" style="background:#5DBCD9">4</div>
+        <h3 class="text-lg font-bold text-gray-900 mb-2" style="font-family:'Inter',sans-serif">Smile</h3>
+        <p class="text-sm text-gray-500">Leave with a healthy, confident smile and a personalised care plan.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- TESTIMONIALS -->
+<section id="testimonials" class="py-24 bg-gradient-to-b from-gray-50 to-white">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="text-center mb-16">
+      <div class="section-badge mx-auto mb-4"><i class="fas fa-star text-xs"></i> Patient Reviews</div>
+      <h2 class="text-3xl sm:text-4xl font-bold text-gray-900 mt-4">What Our Patients Say</h2>
+      <div class="accent-divider mx-auto"></div>
+    </div>
+    <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+      <div class="testimonial-card bg-white rounded-2xl p-6">
+        <div class="flex gap-1 text-amber-400 mb-3"><i class="fas fa-star text-sm"></i><i class="fas fa-star text-sm"></i><i class="fas fa-star text-sm"></i><i class="fas fa-star text-sm"></i><i class="fas fa-star text-sm"></i></div>
+        <p class="text-gray-600 text-sm italic leading-relaxed mb-4">"Always treated like the most important client. Very MINIMAL pain in all of my visits. Efficient & effective treatment plans."</p>
+        <div class="flex items-center gap-3 pt-3 border-t border-gray-100"><div class="w-9 h-9 rounded-full flex items-center justify-center text-sm font-bold" style="background:#eef8fb;color:#3a9fc2">LC</div><span class="text-sm font-semibold text-gray-800">Layton Cowden</span></div>
+      </div>
+      <div class="testimonial-card bg-white rounded-2xl p-6">
+        <div class="flex gap-1 text-amber-400 mb-3"><i class="fas fa-star text-sm"></i><i class="fas fa-star text-sm"></i><i class="fas fa-star text-sm"></i><i class="fas fa-star text-sm"></i><i class="fas fa-star text-sm"></i></div>
+        <p class="text-gray-600 text-sm italic leading-relaxed mb-4">"Best dentist ever... you don't even know you're at the dentist! Amazing staff and very professional."</p>
+        <div class="flex items-center gap-3 pt-3 border-t border-gray-100"><div class="w-9 h-9 rounded-full flex items-center justify-center text-sm font-bold" style="background:#eef8fb;color:#3a9fc2">LR</div><span class="text-sm font-semibold text-gray-800">Liz Roux</span></div>
+      </div>
+      <div class="testimonial-card bg-white rounded-2xl p-6">
+        <div class="flex gap-1 text-amber-400 mb-3"><i class="fas fa-star text-sm"></i><i class="fas fa-star text-sm"></i><i class="fas fa-star text-sm"></i><i class="fas fa-star text-sm"></i><i class="fas fa-star text-sm"></i></div>
+        <p class="text-gray-600 text-sm italic leading-relaxed mb-4">"I actually look forward to my check-ups! Fabulous friendly team make every appointment a pleasure."</p>
+        <div class="flex items-center gap-3 pt-3 border-t border-gray-100"><div class="w-9 h-9 rounded-full flex items-center justify-center text-sm font-bold" style="background:#eef8fb;color:#3a9fc2">JB</div><span class="text-sm font-semibold text-gray-800">Jacs Bate</span></div>
+      </div>
+      <div class="testimonial-card bg-white rounded-2xl p-6">
+        <div class="flex gap-1 text-amber-400 mb-3"><i class="fas fa-star text-sm"></i><i class="fas fa-star text-sm"></i><i class="fas fa-star text-sm"></i><i class="fas fa-star text-sm"></i><i class="fas fa-star text-sm"></i></div>
+        <p class="text-gray-600 text-sm italic leading-relaxed mb-4">"I've been bringing my kids here since they first got teeth. They have never known to be afraid of the dentist."</p>
+        <div class="flex items-center gap-3 pt-3 border-t border-gray-100"><div class="w-9 h-9 rounded-full flex items-center justify-center text-sm font-bold" style="background:#eef8fb;color:#3a9fc2">ND</div><span class="text-sm font-semibold text-gray-800">Nanda Didiza</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FAQ -->
+<section id="faq" class="py-24 bg-white">
+  <div class="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="text-center mb-16">
+      <div class="section-badge mx-auto mb-4"><i class="fas fa-question-circle text-xs"></i> FAQ</div>
+      <h2 class="text-3xl sm:text-4xl font-bold text-gray-900 mt-4">Frequently Asked Questions</h2>
+      <div class="accent-divider mx-auto"></div>
+    </div>
+    <div class="space-y-3">
+      <div class="faq-item border border-gray-200 rounded-xl overflow-hidden"><button class="faq-btn w-full text-left px-6 py-5 flex items-center justify-between" onclick="this.parentElement.classList.toggle('faq-open')"><span class="font-semibold text-gray-900 pr-4" style="font-family:'Inter',sans-serif">What is Waterlase laser dentistry?</span><svg class="faq-chevron w-5 h-5 text-gray-400 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg></button><div class="faq-answer px-6 text-sm text-gray-600 leading-relaxed">Waterlase uses laser energy combined with a gentle water spray to perform many dental procedures without traditional drills or needles. It's quieter, more comfortable, and often eliminates the need for anaesthesia. Umhlanga Dental was the first practice in KZN to offer this technology.</div></div>
+      <div class="faq-item border border-gray-200 rounded-xl overflow-hidden"><button class="faq-btn w-full text-left px-6 py-5 flex items-center justify-between" onclick="this.parentElement.classList.toggle('faq-open')"><span class="font-semibold text-gray-900 pr-4" style="font-family:'Inter',sans-serif">Do you handle dental emergencies?</span><svg class="faq-chevron w-5 h-5 text-gray-400 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg></button><div class="faq-answer px-6 text-sm text-gray-600 leading-relaxed">Yes! We offer same-day emergency appointments. Call us on 031 561 5520 or WhatsApp 084 651 3580 for immediate assistance.</div></div>
+      <div class="faq-item border border-gray-200 rounded-xl overflow-hidden"><button class="faq-btn w-full text-left px-6 py-5 flex items-center justify-between" onclick="this.parentElement.classList.toggle('faq-open')"><span class="font-semibold text-gray-900 pr-4" style="font-family:'Inter',sans-serif">Is Waterlase safe for children?</span><svg class="faq-chevron w-5 h-5 text-gray-400 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg></button><div class="faq-answer px-6 text-sm text-gray-600 leading-relaxed">Absolutely. It's particularly beneficial for children — quieter, no vibration, and often eliminates the need for injections. Many young patients don't even realise they've had treatment.</div></div>
+      <div class="faq-item border border-gray-200 rounded-xl overflow-hidden"><button class="faq-btn w-full text-left px-6 py-5 flex items-center justify-between" onclick="this.parentElement.classList.toggle('faq-open')"><span class="font-semibold text-gray-900 pr-4" style="font-family:'Inter',sans-serif">Do you accept medical aid?</span><svg class="faq-chevron w-5 h-5 text-gray-400 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg></button><div class="faq-answer px-6 text-sm text-gray-600 leading-relaxed">Yes, we accept all major medical aids. Bring your card and ID to your first appointment. We submit claims on your behalf where possible.</div></div>
+      <div class="faq-item border border-gray-200 rounded-xl overflow-hidden"><button class="faq-btn w-full text-left px-6 py-5 flex items-center justify-between" onclick="this.parentElement.classList.toggle('faq-open')"><span class="font-semibold text-gray-900 pr-4" style="font-family:'Inter',sans-serif">What are your practice hours?</span><svg class="faq-chevron w-5 h-5 text-gray-400 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg></button><div class="faq-answer px-6 text-sm text-gray-600 leading-relaxed">Monday to Friday, 8am to 5pm. Saturday mornings by appointment. For emergencies outside hours, WhatsApp 084 651 3580.</div></div>
+    </div>
+  </div>
+</section>
+
+<!-- BOOKING -->
+<section id="booking" class="py-24" style="background:linear-gradient(135deg,#eef8fb,#fff)">
+  <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+    <div class="section-badge mx-auto mb-4"><i class="fas fa-calendar-alt text-xs"></i> Book Now</div>
+    <h2 class="text-3xl sm:text-4xl font-bold text-gray-900 mt-4">Ready for a Better Smile?</h2>
+    <div class="accent-divider mx-auto"></div>
+    <p class="text-gray-500 mt-4 max-w-xl mx-auto mb-10" style="font-family:'Inter',sans-serif">Book your appointment today. Call us, WhatsApp, or email and we'll get back to you shortly.</p>
+    <div class="grid sm:grid-cols-3 gap-4 max-w-2xl mx-auto">
+      <a href="tel:+27315615520" class="btn-primary py-4 rounded-xl font-semibold flex items-center justify-center gap-2"><i class="fas fa-phone"></i> 031 561 5520</a>
+      <a href="https://wa.me/27846513580" target="_blank" class="bg-emerald-500 text-white py-4 rounded-xl font-semibold flex items-center justify-center gap-2 hover:bg-emerald-600 transition shadow-lg shadow-emerald-500/25"><i class="fab fa-whatsapp text-lg"></i> WhatsApp</a>
+      <a href="mailto:reception@umhlangadental.co.za" class="btn-dark py-4 rounded-xl font-semibold flex items-center justify-center gap-2"><i class="fas fa-envelope"></i> Email Us</a>
+    </div>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact" class="py-24 bg-white">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="text-center mb-16">
+      <div class="section-badge mx-auto mb-4"><i class="fas fa-map-marker-alt text-xs"></i> Contact</div>
+      <h2 class="text-3xl sm:text-4xl font-bold text-gray-900 mt-4">Get In Touch</h2>
+      <div class="accent-divider mx-auto"></div>
+    </div>
+    <div class="grid lg:grid-cols-2 gap-12">
+      <form class="space-y-4">
+        <div class="grid grid-cols-2 gap-4">
+          <input type="text" placeholder="Full Name" class="form-input border border-gray-200 rounded-xl px-4 py-3.5 text-sm w-full bg-gray-50">
+          <input type="tel" placeholder="Phone Number" class="form-input border border-gray-200 rounded-xl px-4 py-3.5 text-sm w-full bg-gray-50">
+        </div>
+        <input type="email" placeholder="Email Address" class="form-input border border-gray-200 rounded-xl px-4 py-3.5 text-sm w-full bg-gray-50">
+        <textarea placeholder="How can we help you?" rows="4" class="form-input border border-gray-200 rounded-xl px-4 py-3.5 text-sm w-full bg-gray-50 resize-none"></textarea>
+        <div style="position:absolute;left:-9999px" aria-hidden="true"><input type="text" name="_gotcha" tabindex="-1" autocomplete="off"></div>
+        <button type="submit" class="btn-primary w-full py-4 rounded-xl font-semibold text-base"><i class="fas fa-paper-plane mr-2"></i>Send Message</button>
+      </form>
+      <div class="space-y-6">
+        <div class="flex items-start gap-4 p-4 rounded-xl bg-gray-50 border border-gray-100"><div class="w-11 h-11 rounded-xl flex items-center justify-center flex-shrink-0" style="background:#eef8fb"><i class="fas fa-phone" style="color:#3a9fc2"></i></div><div><h3 class="font-semibold text-gray-900 mb-1">Phone</h3><p class="text-sm text-gray-500"><a href="tel:+27315615520" class="hover:underline" style="color:#3a9fc2">+27 31 561 5520</a></p><p class="text-sm text-gray-500"><a href="tel:+27846513580" class="hover:underline" style="color:#3a9fc2">+27 84 651 3580</a> (WhatsApp)</p></div></div>
+        <div class="flex items-start gap-4 p-4 rounded-xl bg-gray-50 border border-gray-100"><div class="w-11 h-11 rounded-xl flex items-center justify-center flex-shrink-0" style="background:#eef8fb"><i class="fas fa-envelope" style="color:#3a9fc2"></i></div><div><h3 class="font-semibold text-gray-900 mb-1">Email</h3><p class="text-sm"><a href="mailto:reception@umhlangadental.co.za" class="hover:underline" style="color:#3a9fc2">reception@umhlangadental.co.za</a></p></div></div>
+        <div class="flex items-start gap-4 p-4 rounded-xl bg-gray-50 border border-gray-100"><div class="w-11 h-11 rounded-xl flex items-center justify-center flex-shrink-0" style="background:#eef8fb"><i class="fas fa-clock" style="color:#3a9fc2"></i></div><div><h3 class="font-semibold text-gray-900 mb-1">Hours</h3><p class="text-sm text-gray-500">Mon-Fri: 8:00 AM - 5:00 PM</p><p class="text-sm text-gray-500">Sat: By appointment</p><p class="text-sm text-gray-500">Emergencies: WhatsApp anytime</p></div></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer style="background:#0f1c2e" class="text-white py-16">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="grid md:grid-cols-3 gap-10 mb-10">
+      <div><div class="flex items-center gap-3 mb-4"><img src="https://umhlangadental.co.za/images/logo.png" alt="Umhlanga Dental" class="h-8"><span class="font-bold text-lg">Umhlanga Dental</span></div><p class="text-gray-400 text-sm leading-relaxed">Modern laser dentistry with Dr David Sykes. First Waterlase practice in KZN.</p></div>
+      <div><h4 class="font-semibold text-sm uppercase tracking-wider text-gray-400 mb-4">Quick Links</h4><ul class="space-y-2 text-sm"><li><a href="#services" class="text-gray-300 hover:text-white transition">Services</a></li><li><a href="#about" class="text-gray-300 hover:text-white transition">About</a></li><li><a href="#testimonials" class="text-gray-300 hover:text-white transition">Reviews</a></li><li><a href="#faq" class="text-gray-300 hover:text-white transition">FAQ</a></li><li><a href="#contact" class="text-gray-300 hover:text-white transition">Contact</a></li></ul></div>
+      <div><h4 class="font-semibold text-sm uppercase tracking-wider text-gray-400 mb-4">Contact</h4><ul class="space-y-2 text-sm"><li><a href="tel:+27315615520" class="text-gray-300 hover:text-white transition"><i class="fas fa-phone mr-2 text-xs"></i>031 561 5520</a></li><li><a href="https://wa.me/27846513580" class="text-gray-300 hover:text-white transition"><i class="fab fa-whatsapp mr-2"></i>084 651 3580</a></li><li><a href="mailto:reception@umhlangadental.co.za" class="text-gray-300 hover:text-white transition"><i class="fas fa-envelope mr-2 text-xs"></i>reception@umhlangadental.co.za</a></li></ul></div>
+    </div>
+    <div class="border-t border-gray-800 pt-8 flex flex-col md:flex-row justify-between items-center gap-4">
+      <p class="text-sm text-gray-500">&copy; 2026 Umhlanga Dental. All rights reserved.</p>
+      <p class="text-sm text-gray-600">Built by <a href="https://www.vantagepc.co.za" class="hover:underline" style="color:#5DBCD9">Vantage Point Consulting</a></p>
+    </div>
+  </div>
+</footer>
+
+<!-- WhatsApp Float -->
+<a href="https://wa.me/27846513580" target="_blank" class="fixed bottom-6 left-6 z-50 bg-emerald-500 text-white w-14 h-14 rounded-full flex items-center justify-center shadow-lg shadow-emerald-500/40 hover:bg-emerald-600 hover:scale-110 transition-all duration-300"><i class="fab fa-whatsapp text-2xl"></i></a>
+
+<!-- Scroll to top -->
+<button id="scroll-top" class="scroll-top fixed bottom-6 right-6 z-50 w-12 h-12 rounded-full flex items-center justify-center shadow-lg" style="background:#5DBCD9;color:#fff" onclick="window.scrollTo({top:0,behavior:'smooth'})"><i class="fas fa-chevron-up"></i></button>
+
+<script>
+const nav=document.getElementById('main-nav'),navLinks=nav.querySelectorAll('.nav-link'),navTitle=nav.querySelector('.nav-title');
+window.addEventListener('scroll',()=>{
+  if(window.scrollY>80){nav.classList.add('nav-scrolled');navLinks.forEach(l=>{l.style.color='#374151'});if(navTitle)navTitle.style.color='#111827'}
+  else{nav.classList.remove('nav-scrolled');navLinks.forEach(l=>{l.style.color=''});if(navTitle)navTitle.style.color=''}
+  const b=document.getElementById('scroll-top');if(window.scrollY>600)b.classList.add('visible');else b.classList.remove('visible');
+});
+document.getElementById('mobile-toggle').addEventListener('click',()=>{document.getElementById('mobile-menu').classList.toggle('open')});
+document.querySelectorAll('#mobile-menu a').forEach(a=>{a.addEventListener('click',()=>{document.getElementById('mobile-menu').classList.remove('open')})});
+const obs=new IntersectionObserver(e=>{e.forEach(x=>{if(x.isIntersecting){x.target.style.opacity='1';x.target.classList.add('ud-fade-up')}})},{threshold:.1,rootMargin:'0px 0px -50px 0px'});
+document.querySelectorAll('.service-card,.testimonial-card,.faq-item').forEach(el=>{el.style.opacity='0';obs.observe(el)});
+document.querySelectorAll('a[href^="#"]').forEach(a=>{a.addEventListener('click',e=>{e.preventDefault();const t=document.querySelector(a.getAttribute('href'));if(t)t.scrollIntoView({behavior:'smooth',block:'start'})})});
+</script>
+</body>
+</html>
